@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your Website</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a id="FadeIn" class="navbar-brand" href="#" style="animation: 3s ease-in 1s infinite reverse both running slidein;">Welcome to my portfolio!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{%url 'index'%}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'about'%}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'projects'%}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{%url 'resume'%}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <p style="text-indent:35px;">
+        Brillant individual with a background in engineering, physics, chemistry, mathematics,
+        computer science, and data science. I have several degrees:
+        <blockquote>
+            <ul style="padding-left: 60px;">
+                <li>
+                    High Diploma in Pre-Engineering via the Project Lead the Way Program from Passaic County Technical Institute
+                </li>
+                <li>
+                    Associates of Science Degree (AAS) in Physical Science from Passaic County Community College
+                </li>
+                <li>
+                    Bachelors of Arts Degree (BA) in Mathematical Sciences with a concentration in Data Analytics
+                </li>
+            </ul>
+        </blockquote>
+        
+        Currently I am pursuing a degree in Masters of Science Degree in Data Science at New Jersey Institute of Technology.
+        Roles that I am currently working at involve a few such as being a Software Engineering Intern at Panasonic Corporation
+        of North America, a supervisor at Krispy Kreme as well as other freelance roles. Some freelance roles that I work as include
+        following AI consultant at Outlier AI, Private Tutor and Varsity Tutor, and working as Technology Blogger. I have done work 
+        as undergraduate researcher in Convolutional Neural Networks (CNNs), and Transformers such as Facebook's DETR (Detection Transformer).
+        Additionally, I have worked on projects that include the following Video and Deep Learning, and Recurrent Neural Networks as well as 
+        Long Short-Term Memory (LSTM), and Gated Recurrent Units (GRU) using the TensorFlow Framework in Python. Some of my previous roles include
+        working as a Teaching Assistant for AI4ALL and for Kean University. Activities I am fond of include the following making videos for students
+        learning materials.
+    </p>
+
+  </div>
+  {% load static %}
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
